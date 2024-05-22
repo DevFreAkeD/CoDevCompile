@@ -1,8 +1,4 @@
-# React + Vite
+# CoDevCompile
+A web-based IDE/Judge/Compiler.
+![image](https://github.com/DevFreAkeD/CoDevCompile/assets/32740788/f46b51a5-00d1-4222-a05f-397961b9caa0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
