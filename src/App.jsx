@@ -1,6 +1,7 @@
-import React from 'react'
 import Sidebar from './componenets/Sidebar'
 import Header from './componenets/Header'
+import EditorComponent from './componenets/EditorComponent'
+import "./index.css"
 
 const App = () => {
   return (
@@ -8,9 +9,8 @@ const App = () => {
       <Header />
       <div className="flex flex-grow">
         <Sidebar />
-        <main className="flex-grow p-4">
-          {/* Your main content goes here */}
-          <h1 className="text-2xl font-bold">Input/Output Section</h1>
+        <main className="flex-grow">
+          <EditorComponent />
         </main>
       </div>
     </div>
