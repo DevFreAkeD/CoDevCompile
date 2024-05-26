@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { logo } from '../assets';
+import { githubicon, author, issue } from '../assets';
 
-const Header = () => {
+const Header = ({ onRun }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -16,8 +17,11 @@ const Header = () => {
         <h1 className="text-lg font-bold">CoDevCompile</h1>
         {/* Vertical Line */}
         <div className="h-8 border-l-2 border-gray-500 mx-5"></div>
-        <button className="flex bg-blue-500 hover:bg-blue-700 text-white h-10 w-16 font-bold ml-4 py-2 px-4 rounded">
-            Run
+        <button
+          onClick={onRun} // Call the onRun function passed as a prop
+          className="flex bg-blue-500 hover:bg-blue-700 text-white h-10 w-16 font-bold ml-4 py-2 px-4 rounded"
+        >
+          Run
         </button>
       </div>
 
@@ -35,10 +39,19 @@ const Header = () => {
           )}
         </button>
         {isOpen && (
-          <div className="absolute right-0 mt-5 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-            <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">View Source Code On GitHub</a>
-            <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Report An Issue</a>
-            <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact Author</a>
+          <div className="absolute right-0 mt-5 w-56 bg-gray-200 shadow-lg z-50">
+            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+              <img src={githubicon} alt="GitHub" className="w-4 h-4 mr-3" />
+              <span className="text-xs">View Source Code</span>
+            </a>
+            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+              <img src={issue} alt="Issue" className="w-4 h-4 mr-3" />
+              <span className="text-xs">Report An Issue</span>
+            </a>
+            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+              <img src={author} alt="Author" className="w-4 h-4 mr-3" />
+              <span className="text-xs">Contact Author</span>
+            </a>
           </div>
         )}
       </div>
