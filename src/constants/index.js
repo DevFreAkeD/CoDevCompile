@@ -67,7 +67,7 @@ int main() {
         width: 34,
         height: 34,
         language: 'Java',
-        filename: 'main.java',
+        filename: 'HelloWorld.java',
         template: `public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
