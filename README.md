@@ -5,6 +5,7 @@ A web-based IDE/Judge/Compiler.
 ![Untitled design (14)](https://github.com/DevFreAkeD/CoDevCompile/assets/32740788/98ba5e68-5f6a-48b0-82eb-168168bbe410)
 
 ## ⚙️ Tech Used
+Languages/Libraries/Frameworks/Tools/etc used to develop CoDevCompile.
 1. JavaScript
 2. React + Vite
 3. TailwindCSS
@@ -12,6 +13,7 @@ A web-based IDE/Judge/Compiler.
 5. Monaco Editor
 
 ## 🔋 Features
+Features of CoDevCompile.
 1. Beautiful Interface - Header, Sidebar and Main Section(Code Editor)
 2. VS Code Editor - Text Highlighing
 3. Integrated With Judge0 API - Code Submission and Execution
