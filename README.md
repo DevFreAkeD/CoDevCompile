@@ -17,6 +17,19 @@ A web-based IDE/Judge/Compiler.
 3. Integrated With Judge0 API - Code Submission and Execution
 4. Multi-Language Support - Support Languages Like C, C++, C#, Java, JavaScript and Python.
 
+## </> How To Run
+To run CoDevCompile. you'll generally have to follow these steps:
+1. Clone this repository
+   `git clone https://github.com/DevFreAkeD/CoDevCompile.git`
+2. Navigate to repository directory
+   `cd CoDevCompile`
+3. Install Dependencies
+   `npm install`
+4. Start the Development Server
+   `npm run dev`
+5. Access the Application
+Once the development server is running, open a web browser and navigate to `http://localhost:5173` to view the application.
+
 ## 🖥️ Live Link
-<a src="https://codevcompile.netlify.app/">Live Demo</a>
+<a href="https://codevcompile.netlify.app/">Live Demo</a>
 
