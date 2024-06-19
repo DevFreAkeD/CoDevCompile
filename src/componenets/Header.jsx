@@ -19,9 +19,9 @@ const Header = ({ onRun }) => {
         <div className="h-8 border-l-2 border-gray-500 mx-5"></div>
         <button
           onClick={onRun} // Call the onRun function passed as a prop
-          className="flex bg-blue-500 hover:bg-blue-700 text-white h-10 w-16 font-bold ml-4 py-2 px-4 rounded"
+          className="flex font-inter font-medium bg-[#375cb0] text-white px-4 py-2 w-28 text-md text-center rounded-md text-nowrap min-h-button items-center justify-center gap-[0.3em]"
         >
-          Run
+          RUN
         </button>
       </div>
 
@@ -40,15 +40,15 @@ const Header = ({ onRun }) => {
         </button>
         {isOpen && (
           <div className="absolute right-0 mt-5 w-56 bg-gray-200 shadow-lg z-50">
-            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+            <a href="https://github.com/DevFreAkeD/CoDevCompile" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
               <img src={githubicon} alt="GitHub" className="w-4 h-4 mr-3" />
               <span className="text-xs">View Source Code</span>
             </a>
-            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+            <a href="https://github.com/DevFreAkeD/CoDevCompile/issues" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
               <img src={issue} alt="Issue" className="w-4 h-4 mr-3" />
               <span className="text-xs">Report An Issue</span>
             </a>
-            <a href="#" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
+            <a href="https://github.com/DevFreAkeD/" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-300">
               <img src={author} alt="Author" className="w-4 h-4 mr-3" />
               <span className="text-xs">Contact Author</span>
             </a>
