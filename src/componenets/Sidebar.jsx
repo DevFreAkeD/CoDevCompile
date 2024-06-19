@@ -10,8 +10,8 @@ const Sidebar = ({ onLanguageChange }) => {
   };
 
   return (
-    <div className="h-screen w-16 flex flex-col bg-gray-800 text-white shadow-lg">
-      <div className="flex flex-col items-center mt-4">
+    <div className="h-full px-1.5 w-16 flex flex-col bg-gray-900 text-white shadow-lg">
+      <div className="flex flex-col items-center mt-2">
         {icons.map(item => (
           <a
             key={item.id}

@@ -4,10 +4,15 @@ import { runCode } from '../compiler/script';
 
 const EditorComponent = ({ onRun, language, filename, codeTemplate }) => {
   const [code, setCode] = useState(codeTemplate);
+  const [input, setInput] = useState('// Input your data here');
   const [output, setOutput] = useState('// Output will appear here');
 
   const handleEditorChange = (value) => {
     setCode(value);
+  };
+
+  const handleInputChange = (value) => {
+    setInput(value);
   };
 
   const handleOutputChange = (value) => {
@@ -29,8 +34,8 @@ const EditorComponent = ({ onRun, language, filename, codeTemplate }) => {
   }, [codeTemplate]);
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className="flex flex-row h-full">
+    <div className="flex flex-col">
+      <div className="flex flex-row h-auto">
         {/* Code Section */}
         <div className="flex-1 bg-gray-800 text-white p-0 border-r border-gray-800">
           <div className="bg-gray-900 text-white flex items-center p-3">
@@ -38,26 +43,37 @@ const EditorComponent = ({ onRun, language, filename, codeTemplate }) => {
             <div className="flex-1"></div>
           </div>
           <Editor
-            height="93%" // Set the height of the code editor
-            defaultLanguage={language.toLowerCase()} // Set the default language for syntax highlighting
+            height="92.9%"
+            defaultLanguage={language.toLowerCase()}
             value={code}
-            theme="vs-dark" // Set the theme for the code editor
+            theme="vs-dark"
             onChange={handleEditorChange}
           />
         </div>
 
-        {/* Output Section */}
-        <div className="flex-1 bg-gray-800 text-white p-0">
+        {/* Input/Output Section */}
+        <div className="flex-1 bg-gray-800 text-white p-0 flex flex-col">
+          <div className="bg-gray-900 text-white flex items-center p-3">
+            <div className="mr-4">Input</div>
+            <div className="flex-1"></div>
+          </div>
+          <Editor
+            height="40%"
+            value={input}
+            theme="vs-dark"
+            onChange={handleInputChange}
+          />
+          
           <div className="bg-gray-900 text-white flex items-center p-3">
             <div className="mr-4">Output</div>
             <div className="flex-1"></div>
           </div>
           <Editor
-            height="93%" // Set the height of the code editor
+            height="52.9%"
             value={output}
-            theme="vs-dark" // Use the same theme as the code editor
+            theme="vs-dark"
             onChange={handleOutputChange}
-            options={{ readOnly: false }} // Make the output editor read-write
+            options={{ readOnly: true }}
           />
         </div>
       </div>
