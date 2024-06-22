@@ -20,7 +20,7 @@ Features of CoDevCompile.
 4. Multi-Language Support - Support Languages Like C, C++, C#, Java, JavaScript and Python.
 
 ## </> How To Run
-To run CoDevCompile. you'll generally have to follow these steps:
+To run **CoDevCompile**. you'll generally have to follow these steps:
 1. Clone this repository: `git clone https://github.com/DevFreAkeD/CoDevCompile.git`
    
 2. Navigate to repository directory: `cd CoDevCompile`
