@@ -34,3 +34,6 @@ To run CoDevCompile. you'll generally have to follow these steps:
 ## 🖥️ Live Link
 <a href="https://codevcompile.netlify.app/">Live Demo</a>
 
+![image](https://github.com/DevFreAkeD/CoDevCompile/assets/32740788/0f5726c2-bc42-40de-858b-2b9c6a6efb21)
+
+
