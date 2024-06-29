@@ -23,8 +23,12 @@ const Header = ({ onRun }) => {
         >
           RUN
         </button>
+        <div className="h-8 border-l-2 border-gray-500 mx-5"></div>
+        {/* Download Button */}
+        <button onClick="" className="flex items-center text-gray-100 hover:text-gray-300">
+          <span className="text-xs">Download Code</span>
+        </button>
       </div>
-
       {/* Hamburger Menu */}
       <div className="relative">
         <button onClick={toggleDropdown} className="flex items-center p-2">
